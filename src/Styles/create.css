@@ -1,0 +1,91 @@
+.createbg{
+      background: linear-gradient(to left, #e9e8e8, #f4f4f4, #eaeaf8 );
+      
+}
+.rcreatebg{
+ display: grid;
+
+      
+/* grid-template-columns: 300px 80%; */
+ grid-template-columns: 300px 7fr;
+          transition: 0.5s ease-in;   
+}
+.icreatebg{
+    
+  display: grid;
+
+      /* grid-template-columns: 100px 92%;  */
+     
+          grid-template-columns: 100px 8fr; 
+      transition: 0.5s ease-out;   
+}
+
+
+.top_link{
+      width: 95%;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      justify-content: space-evenly;
+}
+/* HOME DASHBOARD */
+
+
+.preview_overflow{
+      overflow-x:hidden;
+      overflow-y: scroll;
+}
+.preview_overflow::-webkit-scrollbar{
+      width: 10px;
+     
+}
+.preview_textarea{
+      resize:none;
+}
+.res_new_links_created{
+      width: 90%;
+    
+    
+    
+      margin: 10px  auto 10px auto;
+}
+.res_new_links_created .div{
+      height: 200px;
+}
+@media (max-width:1414px){
+      .rcreatebg{
+            grid-template-columns: 270px 78%;
+      }
+    
+
+}
+
+@media (max-width:1147px){
+ .emptydiv{
+      display: none;
+  
+
+ }
+.rcreatebg{
+
+      grid-template-columns: 100%;
+      
+
+}
+.icreatebg{
+      grid-template-columns: 100%;
+   
+    
+}
+
+
+}
+
+
+@media (max-width:900px){
+      .homeDashDetails_Div{
+            grid-template-columns: 100%;
+      }
+      .top_link{
+            grid-template-columns: 100%;
+      }
+}

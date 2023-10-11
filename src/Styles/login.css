@@ -1,0 +1,13 @@
+.loginbg{
+    background: linear-gradient(to left, #e9e8e8, #f4f4f4, #eaeaf8 );
+}
+.homebg{
+    overflow-y: scroll;
+       background: linear-gradient(to left, #e9e8e8, #f4f4f4, #eaeaf8 );
+
+}
+
+.homebg::-webkit-scrollbar{
+    width: 1px;
+ 
+}
