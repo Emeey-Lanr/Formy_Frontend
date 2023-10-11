@@ -59,7 +59,7 @@ const Formy = () => {
   const pickOptions = (parentId: number, childId: number) => {
     dispatch(pickOptionR({ parentId, childId }));
   };
-  const fillInput = (e: React.ChangeEvent<HTMLInputElement>, id: number) => {
+  const fillInput = (e: React.ChangeEvent<HTMLTextAreaElement>, id: number) => {
     dispatch(fillInputR({ id, answer: e.target.value }));
   };
   const [notAllFilled, setNotAllFilled] = useState("attempted");
@@ -148,10 +148,10 @@ const Formy = () => {
                       ))
                     ) : (
                       <div className="w-10p mx-auto">
-                        <input
+                        <textarea 
                           onChange={(e) => fillInput(e, id)}
-                          type="text"
-                          className="w-10p border-b-2 outline-0 border-appcolor-200"
+                       
+                          className="resize-none w-10p border-b-2 outline-0 border-appcolor-200"
                         />
                       </div>
                     )}
