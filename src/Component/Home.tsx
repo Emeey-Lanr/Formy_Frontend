@@ -2,30 +2,24 @@ import "../Styles/login.css";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 import "../Styles/create.css";
-import {
-  AiOutlineArrowRight,
-  AiOutlineLink,
-  AiOutlineUser,
-} from "react-icons/ai";
+
 import { useSelector, useDispatch } from "react-redux";
 import { FiLink } from "react-icons/fi";
 import {
   FaLink,
-  FaTrash,
-  FaArrowAltCircleRight,
-  FaPersonBooth,
+ 
 } from "react-icons/fa";
-import { SlArrowRight, SlPeople } from "react-icons/sl";
+
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useContext } from "react";
 import { changeDashSectionIdentificationR } from "../Redux/Style";
 
 import { appContext } from "../App";
-import { CurrentData, TopThree } from "../Interface/AllInfoInterface";
+import { TopThree } from "../Interface/AllInfoInterface";
 import Copied from "./Copied";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { useState } from "react";
-import { VictoryBar, VictoryChart } from "victory";
+
 import { viewDetailsFromDashboardR } from "../Redux/Registered";
 import Chart from "react-apexcharts"
 import { hideShowSideBarR } from "../Redux/Style";
